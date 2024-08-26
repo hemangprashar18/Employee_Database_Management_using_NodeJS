@@ -3,7 +3,7 @@ const User = require('../models/userModel');
 // function to get the profile of that particular user
 exports.getUserProfile = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
+    const user = await User.findById(req.params.id).lean();
     if (!user) {
      return res.status(404).json({ message: 'User not found' });
     }  
