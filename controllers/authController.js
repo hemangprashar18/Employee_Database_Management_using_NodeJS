@@ -17,7 +17,7 @@ async function registerUser(req, res) {
 
         await newUser.save();
 
-        const loginUrl = `http://localhost:3000/login`;
+        const loginUrl = `http://localhost:5000/login`;
 
         await sendEmail(email, fullName, password, loginUrl);
 
