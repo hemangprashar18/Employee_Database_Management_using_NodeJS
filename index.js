@@ -1,13 +1,13 @@
-// const express = require('express');
-// const mongoose = require('mongoose');
-// const cors = require('cors');
-// const bodyParser = require('body-parser');
-// const dotenv = require('dotenv');
-import express from 'express';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+// import express from 'express';
+// import mongoose from 'mongoose';
+// import cors from 'cors';
+// import bodyParser from 'body-parser';
+// import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -21,13 +21,13 @@ mongoose.connect(process.env.MONGO_URL)
 .then(() => console.log('Connected to MongoDB locally'))
 .catch(err => console.error('Error connecting to MongoDB', err));
 
-import authRoutes from './routes/authRoutes.js';
-import userRoutes from './routes/userRoutes.js';
-import videoRoutes from './routes/videoRoutes.js';
+// import authRoutes from './routes/authRoutes.js';
+// import userRoutes from './routes/userRoutes.js';
+// import videoRoutes from './routes/videoRoutes.js';
 
-// const authRoutes = require('./routes/authRoutes');
-// const userRoutes = require('./routes/userRoutes');
-// const videoRoutes = require('./routes/videoRoutes');
+const authRoutes = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
+const videoRoutes = require('./routes/videoRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);

@@ -1,5 +1,5 @@
-// const nodemailer = require('nodemailer');
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
+// import nodemailer from 'nodemailer';
 
 const sendEmail = async (recipient, fullName, password, url) => {
     try {

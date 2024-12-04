@@ -1,7 +1,7 @@
-// const User = require('../models/userModel');
-// const sendEmail = require('../services/emailService');
-import User from '../models/userModel.js';
-import sendEmail from '../services/emailService.js';
+const User = require('../models/userModel');
+const sendEmail = require('../services/emailService');
+// import User from '../models/userModel.js';
+// import sendEmail from '../services/emailService.js';
 
 async function registerUser(req, res) {
     try {

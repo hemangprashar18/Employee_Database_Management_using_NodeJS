@@ -1,7 +1,7 @@
-// const Photo = require('../models/photoModel');
-// const User = require('../models/userModel');
-import Photo from '../models/photoModel';
-import User from '../models/userModel.js';
+const Photo = require('../models/photoModel');
+const User = require('../models/userModel');
+// import Photo from '../models/photoModel';
+// import User from '../models/userModel.js';
 
 exports.uploadPhoto = async (req, res) => {
   try {
