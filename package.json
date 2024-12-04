@@ -2,9 +2,9 @@
   "name": "assingment-work",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "vercel-start": "node app.js"
+    "vercel-start": "node index.js"
   },
   "keywords": [],
   "author": "",
