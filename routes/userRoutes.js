@@ -1,7 +1,12 @@
-const express = require('express');
-const { getUserProfile, addUserBio } = require('../controllers/userController');
-const { uploadPhoto } = require('../controllers/photoController');
-const { uploadPhotoMiddleware } = require('../middlewares/upload');
+// const express = require('express');
+// const { getUserProfile, addUserBio } = require('../controllers/userController');
+// const { uploadPhoto } = require('../controllers/photoController');
+// const { uploadPhotoMiddleware } = require('../middlewares/upload');
+
+import express from 'express';
+import { getUserProfile, addUserBio } from '../controllers/userController';
+import { uploadPhoto } from '../controllers/photoController';
+import { uploadPhotoMiddleware } from '../middlewares/upload';
 
 const router = express.Router();
 

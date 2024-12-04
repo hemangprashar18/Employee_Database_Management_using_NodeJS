@@ -1,4 +1,5 @@
-const User = require('../models/userModel');
+// const User = require('../models/userModel');
+import User from '../models/userModel.js';
 
 // function to get the profile of that particular user
 exports.getUserProfile = async (req, res) => {

@@ -1,5 +1,7 @@
 const Video = require('../models/videoModel');
 const User = require('../models/userModel');
+import Video from '../models/videoModel';
+import User from '../models/userModel.js';
 
 // function to upload a video
 exports.uploadVideo = async (req, res) => {
